@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart
+gTTS
+langchain
+langchain-openai
+langchain-neo4j
