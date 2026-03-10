@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
 import { Network, Filter, ZoomIn, ZoomOut, Database } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -32,10 +32,10 @@ const generateOntologyData = () => {
 };
 
 export function GraphTab() {
-  const graphRef = useRef();
-  const [data, setData] = useState({ nodes: [], links: [] });
+  const graphRef = useRef<any>(null);
+  const [data, setData] = useState<{ nodes: any[]; links: any[] }>({ nodes: [], links: [] });
   const [containerDimensions, setContainerDimensions] = useState({ width: 800, height: 600 });
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setData(generateOntologyData());

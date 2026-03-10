@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Mic, Cpu, Database, Network as NetworkIcon, Terminal, Activity } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 

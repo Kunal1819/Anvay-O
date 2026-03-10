@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Globe, Network, Map as MapIcon, Activity, Fingerprint, Search, Mic, Cpu } from 'lucide-react';
+import { Shield, Globe, Network, Map as MapIcon, Fingerprint, Search, Mic, Cpu } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { OverviewTab } from './components/OverviewTab';
 import { GraphTab } from './components/GraphTab';

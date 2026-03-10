@@ -1,7 +1,7 @@
 import React from 'react';
 import { Activity, AlertTriangle, Cpu, Radio, Zap, Target } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar } from 'recharts';
 
 const METRICS = [
   { label: 'Active Nodes', value: '10,482,901', change: '+12,045', trend: 'up', icon: Activity },

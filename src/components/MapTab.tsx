@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Circle, Polygon } from 'react-leaflet';
+import { useState } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { Layers, Target, Crosshair, AlertOctagon } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 // Fix for Leaflet default icon paths in React
 import L from 'leaflet';
@@ -10,6 +9,7 @@ import iconUrl from 'leaflet/dist/images/marker-icon.png';
 import iconRetinaUrl from 'leaflet/dist/images/marker-icon-2x.png';
 import shadowUrl from 'leaflet/dist/images/marker-shadow.png';
 
+// @ts-expect-error - _getIconUrl is not in the type definition but exists at runtime
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl,
